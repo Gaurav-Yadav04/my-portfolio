@@ -75,8 +75,12 @@ export default function ParticlesBackground(){
 
         animate();
         
+        return () => {
+            cancelAnimationFrame(animationId);
+            window.removeEventListener("resize", handleResize)
+        }
 
-    })
+    },[])
 
     return(
      <canvas
