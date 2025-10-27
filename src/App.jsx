@@ -1,11 +1,31 @@
-import React from 'react'
 
-const App = () => {
-  return (
-    <div>
-      <h1 className='bg-red-500 rounded-xl'>helo worl</h1>
+import Navbar from "./components/Navbar";
+import About from "./sections/About";     
+import Skills from "./sections/Skills"
+import Projects from "./sections/Projects"
+import Experience from "./sections/Experience"
+import Testimonials from "./sections/Testimonials"
+import Contact from "./sections/contact";
+import Footer from "./sections/Footer"
+import Home from './sections/Home';
+import ParticlesBackground from "./components/ParticlesBackground";
+
+export default function App() {
+  return(
+
+    <div className="relative gradient text-white">
+    <ParticlesBackground />
+    <Navbar />
+    < Home />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Testimonials />
+    <Contact />
+    <Footer />
+
+
     </div>
   )
 }
-
-export default App
