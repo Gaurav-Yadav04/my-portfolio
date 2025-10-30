@@ -2,8 +2,8 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div className='w-full h-screen'>
-      Contact
+    <div>
+      
     </div>
   )
 }
